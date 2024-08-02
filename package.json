@@ -1,35 +1,37 @@
 {
-  "name": "@faustwp/app-router-example",
+  "name": "@faustwp/getting-started-example",
   "private": true,
-  "type": "module",
+  "version": "0.1.0",
   "scripts": {
     "clean": "rimraf .next",
-    "dev": "npm run clean && faust dev",
+    "dev": "npm run clean && NODE_OPTIONS='--inspect' faust dev",
     "build": "faust build",
     "generate": "faust generatePossibleTypes",
     "stylesheet": "faust generateGlobalStylesheet",
     "start": "faust start"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.0",
-    "@apollo/experimental-nextjs-app-support": "^0.8.0",
+    "@apollo/client": "^3.10.4",
     "@faustwp/cli": "^3.0.2",
     "@faustwp/core": "^3.0.3",
-    "@faustwp/experimental-app-router": "^0.3.1",
-    "graphql": "^16.7.1",
-    "next": "^14.2.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@wordpress/base-styles": "^4.49.0",
+    "@wordpress/block-library": "^7.19.0",
+    "classnames": "^2.5.1",
+    "graphql": "^16.8.1",
+    "next": "^12.3.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.77.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "daisyui": "^4.12.10",
+    "next-secure-headers": "^2.2.0",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
   },
   "engines": {
     "node": ">=18",
     "npm": ">=8"
-  },
-  "devDependencies": {
-    "@types/node": "^20.6.3",
-    "@types/react": "^18.2.36",
-    "@types/react-dom": "^18.2.14",
-    "next-secure-headers": "^2.2.0",
-    "typescript": "^5.2.2"
   }
 }

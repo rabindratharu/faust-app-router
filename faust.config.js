@@ -1,7 +1,13 @@
-import { setConfig } from '@faustwp/core/dist/mjs/config/index.js';
+import { setConfig } from '@faustwp/core';
+import templates from './wp-templates';
 import possibleTypes from './possibleTypes.json';
 
-/** @type {import('@faustwp/core').FaustConfig} */
+/**
+ * @type {import('@faustwp/core').FaustConfig}
+ **/
 export default setConfig({
+  templates,
+  plugins: [],
+  experimentalToolbar: true,
   possibleTypes,
 });
